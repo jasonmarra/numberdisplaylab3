@@ -1,14 +1,6 @@
-Project: number-display
-Authors: Michael Kölling and David J. Barnes
-
-This project is part of the material for the book
-
-   Objects First with Java - A Practical Introduction using BlueJ
-   Seventh edition
-   David J. Barnes and Michael Kölling
-
-It is discussed in chapter 3.
-
-To use this project, create an instance of class NumberDisplay. Then inspect this 
-instance and leave the inspector window open. With the inspector window open, 
-call the object's methods, such as increment and setValue.
+1.Class diagrams are shown as blueprints of classes and their relationships, they are persistent, they are saved.while object diagrams are shown as little pictures of the object on the object bench. they are not saved.
+2.A class diagram can change when you create classes, when fixing bugs.
+3.when we change relationships and create new objects
+4.private Instructor tutor;
+6.when calling increment on minutes, i count everytime i click until 60 then it will roll over to 0.after that when u call increment on the hours object to make the clock advance by 1 hour.
+8.
