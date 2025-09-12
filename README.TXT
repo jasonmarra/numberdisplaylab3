@@ -3,4 +3,6 @@
 3.when we change relationships and create new objects
 4.private Instructor tutor;
 6.when calling increment on minutes, i count everytime i click until 60 then it will roll over to 0.after that when u call increment on the hours object to make the clock advance by 1 hour.
-8.
+8.When you setValue to a number higher than the limit,when calling getValue, it enters the last number that was entered that was lower than the limit.
+10."Error:non static method getValue()cannot be referenced from a static context"
+11."Error: '.class'expected".Including an "int" in the parameter was incorrect.once we do include it,we are creating a variable which doesnt work here.
