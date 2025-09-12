@@ -6,3 +6,11 @@
 8.When you setValue to a number higher than the limit,when calling getValue, it enters the last number that was entered that was lower than the limit.
 10."Error:non static method getValue()cannot be referenced from a static context"
 11."Error: '.class'expected".Including an "int" in the parameter was incorrect.once we do include it,we are creating a variable which doesnt work here.
+13. 0 is the value, because once we replace">=" with ">", if ever the replacementValue is equal to 0, it wont set the value field.
+14.negative values and values higher than the limit would now be possible so you can input.
+15.false and (34!=33) && ! false are true.
+16.(a==b)
+17.(a!=b)
+18.No it doesnt work for all circumstances.
+19.No there is no difference(from what i have seen) becuase its an additon operation.
+20.yes abit i found this intresting how if its "cat"+5+8 then it becomes"cats58"
