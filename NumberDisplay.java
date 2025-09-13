@@ -13,7 +13,8 @@
 public class NumberDisplay
 {
     private int limit;
-    private int value;
+    private int hourValue;
+    private int minuteValue;
 
     /**
      * Constructor for objects of class NumberDisplay.
@@ -22,15 +23,20 @@ public class NumberDisplay
     public NumberDisplay(int rollOverLimit)
     {
         limit = rollOverLimit;
-        value = 0;
+        hourValue = 1;
+        minuteValue=0;
     }
 
     /**
      * Return the current value.
      */
-    public int getValue()
+    public int getHourValue()
     {
-        return value;
+        return hourValue;
+    }
+    public int getMinuteValue()
+    { 
+        return minuteValue;
     }
 
     /**
@@ -38,16 +44,25 @@ public class NumberDisplay
      * String. If the value is less than ten, it will be padded with a leading
      * zero).
      */
-    public String getDisplayValue()
+    public String getHourDisplayValue()
     {
-        if(value < 10) {
-            return "0" + value;
+        if(hourValue < 10) {
+            return "0" + hourValue;
         }
         else {
-            return "" + value;
+            return "" + hourValue;
         }
     }
-
+    public String getMinuteDisplayValue()
+    {
+        if(minuteValue<10) {
+            return"0" + minuteValue;
+        }
+        else{
+            return"" + minuteValue;
+        }  
+    }
+    
     /**
      * Set the value of the display to the new specified value. If the new
      * value is less than zero or over the limit, do nothing.
@@ -55,19 +70,26 @@ public class NumberDisplay
     public void setValue(int replacementValue)
     {
         if((replacementValue >= 0) && (replacementValue < limit)) {
-            value = replacementValue;
+            hourValue= replacementValue;
+            minuteValue = replacementValue;
         }
+        
     }
 
     /**
      * Increment the display value by one, rolling over to zero if the
      * limit is reached.
      */
-    public void increment()
+    public void minuteIncrement()
     {
-        value = value + 1;
-        if(value == limit) {
-            value = 0;
+        minuteValue=(minuteValue+ 1);
+    }
+    
+    public void hourIncrement()
+    {
+        hourValue = hourValue + 1;
+        if(hourValue >12) {
+            hourValue = 1;
         }
     }
 }
